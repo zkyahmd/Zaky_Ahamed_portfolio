@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio- Zaky Ahamed</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="uiux.css">
     <script src="https://kit.fontawesome.com/08850b9888.js" crossorigin="anonymous"></script>
 </head>
 
@@ -18,6 +19,7 @@
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Service</a></li>
+                    <li><a href="#uiux">UI/UX Designs</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
@@ -59,9 +61,9 @@
                         Driven by curiosity and a strong work ethic, I am eager to contribute my skills to innovative
                         projects while continuously evolving as a developer.</p>
                     <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links active-link" onclick="opentab(event, 'skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab(event, 'experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab(event, 'education')">Education</p>
 
 
                     </div>
@@ -122,6 +124,93 @@
         </div>
 
     </div>
+    <!-- UI/UX Portfolio: showcase visual work separately from software projects -->
+    <section id="uiux" class="design-section">
+        <div class="container">
+            <div class="design-heading">
+                <div>
+                    <p class="design-eyebrow">SELECTED DESIGN WORK</p>
+                    <h2 class="sub-title">UI/UX Design Projects</h2>
+                    <p class="design-intro">A collection of interface designs, student projects, and visual concepts exploring clear navigation and engaging digital experiences.</p>
+                </div>
+            </div>
+            <div class="design-grid">
+                <article class="design-card">
+                    <a class="design-preview" href="images/Modern%20Purple%20E-Commerce%20App%20Case%20Study.png" target="_blank" rel="noopener noreferrer" aria-label="Open full-size preview of E-Commerce Mobile App">
+                        <img src="images/Modern Purple E-Commerce App Case Study.png" alt="E-Commerce App screen designs" loading="lazy">
+                        <span class="design-preview-label">View full image <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></span>
+                    </a>
+                    <div class="design-info">
+                        <p class="design-kind">AI-assisted concept design</p>
+                        <h3>E-Commerce Mobile App</h3>
+                        <p>A visual shopping-app concept covering product discovery, categories, product details, cart, checkout and order confirmation.</p>
+                        <a class="design-link" href="images/Modern%20Purple%20E-Commerce%20App%20Case%20Study.png" target="_blank" rel="noopener noreferrer">Explore design <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                    </div>
+                </article>
+                <article class="design-card">
+                    <a class="design-preview" href="images/CanteenManagementSystem_design.png" target="_blank" rel="noopener noreferrer" aria-label="Open full-size preview of CanteenEase Dashboard">
+                        <img src="images/CanteenManagementSystem_design.png" alt="CanteenEase dashboard screenshot" loading="lazy">
+                        <span class="design-preview-label">View full image <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></span>
+                    </a>
+                    <div class="design-info">
+                        <p class="design-kind">Dashboard design</p>
+                        <h3>CanteenEase Dashboard</h3>
+                        <p>A canteen-management home dashboard with food ordering, nutrition, discounts and information sections.</p>
+                        <a class="design-link" href="images/CanteenManagementSystem_design.png" target="_blank" rel="noopener noreferrer">Explore design <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                    </div>
+                </article>
+                <article class="design-card">
+                    <a class="design-preview" href="images/ClientManagementDesign.png" target="_blank" rel="noopener noreferrer" aria-label="Open full-size preview of Client & Ticket Management">
+                        <img src="images/ClientManagementDesign.png" alt="Admin dashboard interface screens" loading="lazy">
+                        <span class="design-preview-label">View full image <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></span>
+                    </a>
+                    <div class="design-info">
+                        <p class="design-kind">Admin dashboard layouts</p>
+                        <h3>Client & Ticket Management</h3>
+                        <p>A collection of admin interface screens for supervisors, tickets, task updates and profiles.</p>
+                        <a class="design-link" href="images/ClientManagementDesign.png" target="_blank" rel="noopener noreferrer">Explore design <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                    </div>
+                </article>
+                <article class="design-card">
+                    <a class="design-preview" href="images/RecipeRescue_prototype.png" target="_blank" rel="noopener noreferrer" aria-label="Open full-size preview of RecipeRescue">
+                        <img src="images/RecipeRescue_prototype.png" alt="RecipeRescue mobile screen" loading="lazy">
+                        <span class="design-preview-label">View full image <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></span>
+                    </a>
+                    <div class="design-info">
+                        <p class="design-kind">Mobile interface design</p>
+                        <h3>RecipeRescue</h3>
+                        <p>A recipe discovery screen with search, ingredient-based exploration and mobile navigation.</p>
+                        <a class="design-link" href="images/RecipeRescue_prototype.png" target="_blank" rel="noopener noreferrer">Explore design <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                    </div>
+                </article>
+                <article class="design-card">
+                    <a class="design-preview" href="images/UniMindPrototype.png" target="_blank" rel="noopener noreferrer" aria-label="Open full-size preview of UniMind Haven">
+                        <img src="images/UniMindPrototype.png" alt="UniMind Haven homepage" loading="lazy">
+                        <span class="design-preview-label">View full image <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></span>
+                    </a>
+                    <div class="design-info">
+                        <p class="design-kind">Web interface concept</p>
+                        <h3>UniMind Haven</h3>
+                        <p>A student well-being website homepage featuring resources, support, mood tracking and community navigation.</p>
+                        <a class="design-link" href="images/UniMindPrototype.png" target="_blank" rel="noopener noreferrer">Explore design <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                    </div>
+                </article>
+                <article class="design-card">
+                    <a class="design-preview" href="images/Prototyping.png" target="_blank" rel="noopener noreferrer" aria-label="Open full-size preview of Mobile App Prototype Exploration">
+                        <img src="images/Prototyping.png" alt="Overview of mobile prototype screens" loading="lazy">
+                        <span class="design-preview-label">View full image <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></span>
+                    </a>
+                    <div class="design-info">
+                        <p class="design-kind">Prototype overview</p>
+                        <h3>Mobile App Prototype Exploration</h3>
+                        <p>A visual overview of mobile flows, including onboarding, discovery, search and profile screens.</p>
+                        <a class="design-link" href="images/Prototyping.png" target="_blank" rel="noopener noreferrer">Explore design <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
     <!---------------Portfolio----------------->
     <div id="portfolio">
         <div class="container">
@@ -199,14 +288,14 @@
         var tabcontents = document.getElementsByClassName("tab-contents");
 
         //defining opentab function
-        function opentab(tabname) {
+        function opentab(evt, tabname) {
             for (tablink of tablinks) {
                 tablink.classList.remove("active-link");
             }
             for (tabcontent of tabcontents) {
                 tabcontent.classList.remove("active-tab");
             }
-            event.currentTarget.classList.add("active-link");
+            evt.currentTarget.classList.add("active-link");
             document.getElementById(tabname).classList.add("active-tab");
         }
 
